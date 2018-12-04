@@ -1,4 +1,4 @@
-package com.oliverstudio.changelocaleruntimeproject.helper;
+package com.oliverstudio.changelocaleruntimeproject;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -7,13 +7,16 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 import android.preference.PreferenceManager;
-import android.util.Log;
 
 import java.util.Locale;
 
 public class LocaleHelper {
 
-    private static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
+    public static final String SELECTED_LANGUAGE = "Locale.Helper.Selected.Language";
+    public static final String IS_CHANGE_LANGUAGE = "Locale.Helper.Is.Change.Language";
+
+    public static final String ENGLISH_LANGUAGE = "en";
+    public static final String VIETNAM_LANGUAGE = "vi";
 
     public static Context onAttach(Context context) {
         String lang = getPersistedData(context, Locale.getDefault().getLanguage());

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Xin chào!!!</string>
-    <string name="world">pisun gorbatiy</string>
+    <string name="hello_world">Xin chào!</string>
+    <string name="second_activity">Hoạt động thứ hai</string>
+    <string name="next">Kế tiếp</string>
 </resources>
